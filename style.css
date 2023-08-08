@@ -65,12 +65,15 @@ p {
 }
 
 .introducao-img{
+  max-width: 30rem;
   display: flex;
   gap: 1rem;
   border-radius: 10px;
   align-items: center;
   background-color: #111111;
   padding: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
   
 }
 
@@ -82,8 +85,6 @@ p {
   background: #ffbb00;
   border-radius: 5px;
 }
-
-
 
 .introducao-img img{
     height: 25rem;
