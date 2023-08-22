@@ -79,7 +79,7 @@ p {
   border-radius: 5px;
 }
 
-.introducao-img{
+.introducao-list{
   max-width: 30rem;
   display: flex;
   gap: 1rem;
@@ -91,18 +91,17 @@ p {
   overflow-x: scroll;
 }
 
-.introducao-img::-webkit-scrollbar {
+.introducao-list::-webkit-scrollbar {
   background: #222;
 }
 
-.introducao-img::-webkit-scrollbar-thumb {
+.introducao-list::-webkit-scrollbar-thumb {
   background: #ffbb00;
   border-radius: 5px;
 }
 
-.introducao-img img{
+.introducao-list img{
     height: 25rem;
-
 }
 
 .introducao h2 {
