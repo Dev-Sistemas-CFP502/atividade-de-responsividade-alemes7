@@ -1,7 +1,4 @@
-/* Define estilos iniciais que se aplicam a todos os elementos */
-
-/* Define que todos os elementos devem ter margem, preenchimento e borda iguais a zero */
-* {
+*{
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,218 +8,178 @@
   text-decoration: none;
 }
 
-/* Define a família da fonte e algumas propriedades para o corpo da página */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #111;
-  padding: 1rem;
-  color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #111;
+padding: 1rem;
+color: #fff
 }
 
-/* Define o tamanho da fonte, espaçamento entre linhas e cor para os parágrafos */
+img{
+max-width: 100%;
+}
+
 p {
-  font-size: 1.25rem;
-  line-height: 1.3;
-  color: #b2b2b2;
+font-size: 1.25rem;
+line-height: 1.3;
+color: #b2b2b2;
 }
 
-/* Centraliza o texto do cabeçalho e define o tamanho da fonte */
 .header {
-  text-align: center;
-  font-size: 2rem;
+text-align: center;
+font-size: 2rem
 }
 
-/* Define estilos específicos para telas com largura máxima de 480px */
-
-/* Define um tamanho menor para o cabeçalho em telas pequenas */
-@media screen and (max-width: 480px){
-  .header {
-      font-size: 20px;
-  }
-}
-
-/* Organiza a lista do menu horizontalmente e define espaçamento entre os itens */
 .menu ul {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin: 2rem;
+display: flex;
+gap: 20px;
+justify-content: center;
+margin: 2rem;
+flex-wrap: wrap;
 }
 
-/* Define aparência de botões para os links do menu e estilos quando o mouse passa por cima */
 .menu a {
-  display: block;
-  background: #222;
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  text-transform: uppercase;
+display: block;
+background: #222;
+color: #fff;
+padding: 1rem 2rem;
+border-radius: 4px;
+text-transform: uppercase;
 }
 
 .menu a:hover {
-  border-color: #ffbb00;
+border-color: #ffbb00;
 }
 
-/* Define estilos para telas entre 320px e 600px de largura */
-
-@media (max-width: 600px) and (min-width: 320px){
-  /* Altera o layout do conteúdo e dos elementos da introdução e vantagens */
-  .conteudo, .introducao-list, .vantagens {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  /* Define tamanho menor para os títulos */
-  .vantagens-titulo, h2 {
-      font-size: 3rem;
-  }
-}
-
-/* Define estilos para telas entre 600px e 992px de largura */
-
-@media (max-width: 992px) and (min-width: 600px){
-  /* Altera o layout da seção de vantagens */
-  .vantagens {
-      flex-direction: column;
-  }
-
-  /* Define tamanho maior para o título da introdução */
-  .introducao h2 {
-      font-size: 5rem;
-  }
-}
-
-/* Define estilos para telas com largura máxima de 700px */
-@media (max-width: 700px) {
-  /* Organiza a lista do menu verticalmente em telas pequenas */
-  .menu ul {
-      flex-wrap: wrap;
-  }
-}
-
-/* Define estilos específicos para telas com largura máxima de 480px */
-
-@media screen and (max-width: 480px){
-  /* Reduz o espaçamento dos links do menu em telas pequenas */
-  .menu a {
-      padding: 12px;
-  }
-}
-
-/* Define aparência do conteúdo principal, como largura máxima, cor de fundo, espaçamento e alinhamento */
 .conteudo {
-  display: flex;
-  max-width: 62.5rem;
-  background: #000000;
-  padding: 2rem;
-  gap: 2rem;
-  margin: 1rem auto;
-  align-items: center;
-  border-radius: 5px;
+display: flex;
+max-width: 62.5rem;
+background: #000000;
+padding: 2rem;
+gap: 2rem;
+margin: 1rem auto;
+align-items: center;
+border-radius: 5px;
 }
 
-/* Define aparência da lista de imagens de introdução, como largura máxima, cor de fundo, espaçamento e alinhamento */
-.introducao-list {
-  max-width: 30rem;
-  display: flex;
-  gap: 1rem;
-  border-radius: 10px;
-  align-items: center;
-  background-color: #111111;
-  padding: 1rem;
-  overflow-y: hidden;
-  overflow-x: scroll;
+.introducao-img{
+overflow-y: scroll;
+overflow-y: hidden;
+display: flex;
+gap: 1rem;
+border-radius: 10px;
+align-items: center;
+background-color: #111111;
+padding: 1rem;
+
 }
 
-/* Define a aparência da barra de rolagem */
-.introducao-list::-webkit-scrollbar {
-  background: #222; /* Define a cor de fundo da barra de rolagem */
+.introducao-img::-webkit-scrollbar {
+background: #222;
 }
 
-/* Define a aparência da barra de rolagem no elemento */
-.introducao-list::-webkit-scrollbar-thumb {
-  background: #ffbb00; /* Define a cor da barra de rolagem */
-  border-radius: 5px; /* Define um raio de borda para arredondar os cantos */
-}
-
-/* Define a altura das imagens dentro do elemento */
-.introducao-list img {
-  height: 25rem; /* Define a altura das imagens para 25 rem */
+.introducao-img::-webkit-scrollbar-thumb {
+background: #ffbb00;
+border-radius: 5px;
 }
 
 
-/* Define tamanho da fonte para o título da introdução */
+
+.introducao-img img{
+  object-fit: cover;
+  height: 25rem;
+
+}
+
 .introducao h2 {
-  font-size: 4rem;
+font-size: 4rem;
 }
 
-/* Define margem superior e inferior e largura máxima para os parágrafos da introdução */
-.introducao p {
-  margin: 2rem 0;
-  max-width: 68ch;
+.introducao p{
+margin: 2rem 0;
+max-width: 68ch;
 }
 
-/* Define aparência dos botões, como cor de fundo, cor de texto, espaçamento e borda arredondada */
+
 .botao {
-  background: #ffbb00;
-  color: #302300;
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  text-transform: uppercase;
+background: #ffbb00;
+color: #302300;
+padding: 1rem 2rem;
+border-radius: 4px;
+text-transform: uppercase;
+display: inline-block;
 }
 
-/* Define aparência dos botões quando o mouse passa por cima */
 .botao:hover {
-  background: #900;
+background: #900;
 }
 
-/* Define aparência da seção de vantagens, como espaçamento, largura máxima e margem */
-.vantagens {
-  display: flex;
-  gap: 2rem;
-  max-width: 62.5rem;
-  margin: 1rem auto;
-  align-items: center;
+.vantagens{
+display: flex;
+gap: 2rem;
+max-width: 62.5rem;
+margin: 1rem auto;
+align-items: center;
 }
 
-/* Define tamanho da fonte, espaçamento entre letras e fundo do título da seção de vantagens */
-.vantagens-titulo {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  background: url(./img/onda.svg);
-  color: #ffbb00;
+.vantagens-titulo{
+font-size: 3rem;
+letter-spacing: 2px;
+background: url(./img/onda.svg);
+color: #ffbb00;
+
+
 }
 
-/* Define espaçamento interno para a lista de vantagens */
-.vantagens-lista {
-  padding: 1rem;
+.vantagens-lista{
+padding: 1rem;
 }
 
-/* Define margem superior e inferior, cor de fundo, espaçamento interno e borda arredondada para itens da lista de vantagens */
-.vantagens-lista li {
-  margin: 1rem 0;
-  background-color: #000000;
-  padding: 2rem;
-  border-radius: 10px;
+.vantagens-lista li{
+margin: 1rem 0;
+background-color: #000000;
+padding: 2rem;
+border-radius: 10px;
 }
 
-/* Define margem superior e tamanho da fonte para títulos das vantagens */
-.vantagens h3 {
-  margin: 10px 0;
-  font-size: 1.4rem;
+.vantagens h3{
+margin: 10px 0;
+font-size: 1.4rem;
 }
-
-/* Define estilos para o rodapé */
-
-/* Define largura total, alinhamento do texto e espaçamento interno para o rodapé */
 .rodape {
-  width: 100%;
-  text-align: center;
-  padding: 40px;
-  box-sizing: border-box;
+width: 100%;
+text-align: center;
+padding: 40px;
+box-sizing: border-box;
 }
-/* Define cor de texto e tamanho da fonte para elementos com classe 'red' */
-.red {
-  color: #ffbb00;
+
+.red{
+color: #ffbb00;
+font-size: 2rem;
+}
+
+
+@media screen and (max-width: 990px) {
+.conteudo, .vantagens{
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 600px) {
+.vantagens-titulo{
   font-size: 2rem;
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+.introducao h2{
+  font-size: 3rem;
+}
+
+.menu a {
+  padding: 1rem 1rem;
+}
+
 }
