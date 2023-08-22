@@ -33,7 +33,6 @@ p {
   }
 }
 
-/* Estilos padrão */
 .menu ul {
   display: flex;
   gap: 20px;
@@ -90,7 +89,6 @@ p {
   padding: 1rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  
 }
 
 .introducao-img::-webkit-scrollbar {
